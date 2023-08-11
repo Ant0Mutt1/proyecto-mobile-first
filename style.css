@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+/* font-family: 'Cardo', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* font-family: 'Lato', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.back-img{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    
+}
+p{
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(104, 104, 104);
+}
+a{
+    font-family: 'Lato', sans-serif;
+}
+.hero{
+    background-image: url(./img/img-hero-portrait.jpg);
+    position: relative;
+}
+
+.hero i{
+    position: absolute;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+}
+ 
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+h1 span{
+    letter-spacing: 7px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #735D67;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #504148;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to top, #efe9e9 0%, #a08794 100%);;
+}
+
+.informacion-texto{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.informacion-texto h2{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+.informacion-texto p{
+    font-family: 'Cardo', serif;
+}
+
+.informacion-img{
+    align-self: flex-end;
+    filter: drop-shadow(5px 5px 10px black);
+}
+
+.links{
+    background-image: url(img/img-link.jpg);
+    background-position: top;
+    position: relative;
+}
+
+.links a{
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media (orientation: landscape) {
+    .hero{
+        background-image: url(./img/img-hero-landscape.jpg);
+    }
+    .texto{
+        width: 30%;
+    }
+    .links{
+        background-size: cover;
+        background-position: center;
+    }
+
+    .information{
+        position: relative;
+    }
+    .informacion-img{
+        position: absolute;
+        bottom: 10px;
+    }
+
+}
+
+@media (min-width:425px){
+    h1{
+        font-size: 4rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .informacion-texto{
+        align-items: center;
+  
+    }
+    
+   .informacion-texto h2{
+        font-size: 3rem;
+    }
+      
+    .informacion-img img{
+        width: 300px;
+    }
+}
