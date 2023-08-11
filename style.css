@@ -32,13 +32,6 @@ a{
     position: relative;
 }
 
-.hero i{
-    position: absolute;
-    right: 20px;
-    color: white;
-    font-size: 2rem;
-}
- 
 h1{
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
